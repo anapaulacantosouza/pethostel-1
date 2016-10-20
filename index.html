@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+	
+		<meta charset="UTF-8">
+		<title>CSS Layout Tutorial</title>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+		<style>
+			body{font-family:arial;}
+			#container{
+			width:90%;
+			margin:10px auto;
+			background-color:#fff;
+			color:#333;
+			border:1px solid #74a839;
+			
+			line-height:130%;}
+			
+			#top{
+			padding:8px;
+			background-color:#ddd;
+			border-bottom:1px solid #74a839;
+			}
+			
+			a{text-decoration:none;
+			color:#fff;}
+			
+			ul{position:relative;left:-25px;}
+			a:hover{font-weight:bold;}
+			li{list-style-type:none;border:3px solid #74a839;margin-bottom:15px;padding:10px;background-color:#74a839;}
+			
+			
+			#top h1 {position:relative;top:-50px;left:200px;font-size:80px;color:#74a839;padding:0;margin:0;}
+			
+			#leftnav{float:left; width:25%; margin:0; padding:0px;border-right:1px solid #74a839;}
+			#content {margin-left:200px; margin-right:200px;}
+			#footer{margin:0;padding:8px;clear:both;color:#333;background-color:#ddd;border-top:1px solid #74a839;}
+			#leftnav p, #rightnav p{margin:0 0 8px 0}
+			#content h2 {margin: 0 0 8px 0}
+			
+			#footer img{position:relative;left:120px;}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			
+			<div id="top">
+				<img src="logo.jpg" alt="logo"/>
+				<h1>Pet Hostel</h1>
+			</div>
+
+			<div id="leftnav">
+				<ul>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact/Bookings</a></li>
+					<li><a href="#">Testimonials</a></li>
+					<li><a href="#">Photo Gallery</a></li>
+				</ul>
+			</div>
+			
+			
+			<div id="content">
+			</div>
+			
+			<div id="footer">
+				<img src="footimg.jpeg">
+			</div>
+			
+		</div>
+	</body>
+	
+</html>
